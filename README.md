@@ -1,6 +1,6 @@
 ## WSI Patch Encryption Visual Audit
 This repo contains a small audit tool for patch-based encryption on Whole Slide Images (WSIs).
-It reads patch coordinates from a coords-only HDF5 file (`coords` dataset), extracts the corresponding patches from an SVS slide with OpenSlide, then applies an Encrypt-then-MAC construction to each patch. The project report and presentation are added in 'https://drive.google.com/drive/folders/1YHAe4bfS5JOBstdXyBFVrcvaX1cGVmG0?usp=sharing'.
+It reads patch coordinates from a coords-only HDF5 file (`coords` dataset), extracts the corresponding patches from an SVS slide with OpenSlide, then applies an Encrypt-then-MAC construction to each patch. The project report and presentation are added in https://drive.google.com/drive/folders/1YHAe4bfS5JOBstdXyBFVrcvaX1cGVmG0?usp=sharing.
 
 For each mode (CTR / CBC / ECB), the script:
 - encrypts + decrypts a set of sampled patches and saves side-by-side visuals
@@ -54,6 +54,7 @@ The tool creates a folder (default: ./output_256) containing:
 The console output will show real-time verification of security checks:
 [demo] bit flip: Should print "detected tampering"
 [demo] patch swap: Should print "detected tampering"
+
 
 
 
